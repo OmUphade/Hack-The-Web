@@ -13,29 +13,7 @@
   <body>
     <!-- Navbar -->
     <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="assets/2kk.png"
-            alt="KK Educational Logo"
-            height="60px"
-            width="400px"
-          />
-          <!-- <h1>EDUCATIONAL AND RURAL DEVELOPMENT SOCIETY</h1> -->
-        </div>
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home" class="active">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#courses">COURSES</a></li>
-          <li><a href="#skill">SKILL DEVELOPMENT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <a href="login.html" class="login-btn">
-          <span class="material-icons">account_circle</span> Login
-        </a>
-
-        <div class="hamburger" id="hamburger">☰</div>
-      </nav>
+      <div id="navbar-placeholder"></div>
     </header>
 
     <main>
@@ -149,5 +127,12 @@
     <button id="backToTop" title="Go to top">↑</button>
 
     <script src="js/script.js"></script>
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

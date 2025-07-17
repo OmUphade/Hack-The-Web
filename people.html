@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>KK Educational & Rural Development Society</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/people.css" />
   </head>
   <body>
-    <div class="background">
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
+    <div id="navbar-placeholder"></div>
 
     <!-- Director Section -->
     <section class="container">
@@ -89,5 +87,13 @@
         <!-- Add more cards as needed -->
       </div>
     </section>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
