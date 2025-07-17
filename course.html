@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Courses | KKERS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Shared + Page Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/courses.css">
+</head>
+<body class="bg-gradient">
+  <!-- Animated Background -->
+  <div class="background">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+
+  <!-- Navbar -->
+       <header>
+      <div id="navbar-placeholder"></div>
+    </header>
+ 
+
+  <main class="courses-main">
+    <!-- Hero -->
+    <section class="cmain">
+      <h1>Explore Our Courses</h1>
+      
+    </section>
+
+    <!-- Filters -->
+    <section class="courses-filter glass-card">
+      <input
+        type="search"
+        id="courseSearch"
+        placeholder="Search courses (web, python, ai...)"
+        aria-label="Search courses"
+      />
+      <div class="filter-chips" role="group" aria-label="Filter courses">
+        <button data-filter="all"    class="chip active">All</button>
+        <button data-filter="web"    class="chip">Web Dev</button>
+        <button data-filter="dsa"    class="chip">DSA</button>
+        <button data-filter="ai"     class="chip">AI / ML</button>
+        <button data-filter="data"   class="chip">Data</button>
+        <button data-filter="office" class="chip">MS Office</button>
+        <button data-filter="other"  class="chip">Other</button>
+      </div>
+    </section>
+
+    <!-- Courses Grid -->
+    <section class="courses-grid" id="coursesGrid" aria-live="polite">
+      <!-- Cards injected by JS -->
+    </section>
+  </main>
+
+  <!-- Back to Top -->
+  <button id="backToTop" title="Back to top" aria-label="Back to top">↑</button>
+
+  <!-- Scripts -->
+  <script src="js/global-auth.js" defer></script>
+  <script src="js/courses.js" defer></script>
+  <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+</body>
+</html>

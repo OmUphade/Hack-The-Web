@@ -1,0 +1,69 @@
+/* Reset / Base */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;color:#fff;line-height:1.6;}
+
+/* Gradient BG */
+.bg-gradient{
+  background:linear-gradient(135deg,#0e2431,#2c5364);
+  min-height:100vh;
+  position:relative;
+  overflow-x:hidden;
+}
+
+
+/* Glass utility */
+.glass-card{
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.25);
+}
+
+
+.hamburger{
+  display:none;
+  background:none;
+  border:none;
+  color:#00c8d7;
+  font-size:1.75rem;
+  cursor:pointer;
+}
+
+
+/* Auth dropdown */
+.user-menu{position:relative;display:inline-block;cursor:pointer;font-weight:600;}
+.user-name{color:#00c8d7;}
+.user-menu .dropdown{
+  display:none;
+  position:absolute;
+  top:28px;left:0;
+  min-width:120px;
+  padding:10px;
+  background:#fff;
+  color:#333;
+  border-radius:8px;
+  box-shadow:0 4px 12px rgba(0,0,0,.3);
+  text-align:left;
+  z-index:200;
+}
+
+
+
+/* Mobile menu */
+@media(max-width:768px){
+  .hamburger{display:block;}
+  .nav-links{
+    position:absolute;
+    top:60px;right:16px;
+    flex-direction:column;
+    gap:16px;
+    background:rgba(0,0,0,.75);
+    padding:24px;
+    border-radius:16px;
+    display:none;
+  }
+  .nav-links.show{display:flex;}
+}
