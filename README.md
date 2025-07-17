@@ -6,10 +6,7 @@ This is a responsive, static website created as part of the **"HACK THE WEB – 
 
 ## 🚀 Live Demo
 
-[View Live Website](#)  
-_(Replace with your deployment link if available)_
-
----
+[https://hack-the-web.onrender.com](#)
 
 ## 📁 Project Structure
 
