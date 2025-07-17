@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KK Educational & Rural Development Society</title>
-    
+
     <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -75,22 +77,45 @@
         </div>
       </section>
 
-      <!-- Courses Section -->
-      <section id="courses" class="courses">
-        <h2>Our Courses</h2>
-        <div class="course-grid">
-          <div class="course-card">
-            <h3>Digital Literacy</h3>
-            <p>Learn computer basics and internet essentials.</p>
+      <!-- Student Section -->
+      <section class="testimonial-section">
+        <h2>Our Students Say!</h2>
+
+        <div class="testimonial-slider">
+          <button class="nav left" onclick="scrollTestimonials(-1)">
+            &#10094;
+          </button>
+
+          <div class="testimonial-wrapper" id="testimonialWrapper">
+            <div class="testimonial-card">
+              <img src="assets/team-2.jpg" alt="Student 1" />
+              <h3>Anjali Reddy</h3>
+              <p>MEPMA Student</p>
+              <q>Excellent training that helped me get placed confidently!</q>
+            </div>
+            <div class="testimonial-card">
+              <img src="assets/team-1.jpg" alt="Student 2" />
+              <h3>Suresh Kumar</h3>
+              <p>Tally Student</p>
+              <q>Learning Tally ERP 9 was smooth and job-focused.</q>
+            </div>
+            <div class="testimonial-card">
+              <img src="student3.jpg" alt="Student 3" />
+              <h3>Rahul Kumar</h3>
+              <p>DDUGKY Student</p>
+              <q>Completed my course and got a job at Sricity. Thanks!</q>
+            </div>
+            <div class="testimonial-card">
+              <img src="student4.jpg" alt="Student 4" />
+              <h3>Priya Sharma</h3>
+              <p>Typing Student</p>
+              <q>The classes were easy to follow and boosted my confidence.</q>
+            </div>
           </div>
-          <div class="course-card">
-            <h3>Accounting</h3>
-            <p>Master Tally and financial accounting.</p>
-          </div>
-          <div class="course-card">
-            <h3>Programming</h3>
-            <p>Hands-on coding in Java, Python & Web Development.</p>
-          </div>
+
+          <button class="nav right" onclick="scrollTestimonials(1)">
+            &#10095;
+          </button>
         </div>
       </section>
 
