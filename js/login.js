@@ -23,12 +23,9 @@ loginForm.addEventListener("submit", (e) => {
     return;
   }
 
-  // Save user name (extract from email for demo)
   const username = email.split("@")[0];
   localStorage.setItem("loggedUser", username);
 
-  // Redirect to home page
   window.location.href = "index.html";
   alert("Login successful!");
-  
 });

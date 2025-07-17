@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("testimonialWrapper");
   const cards = Array.from(wrapper.children);
 
-  // Clone all cards and append to create seamless loop
   cards.forEach((card) => {
     const clone = card.cloneNode(true);
     wrapper.appendChild(clone);
