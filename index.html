@@ -25,8 +25,8 @@
             and more.
           </p>
           <div class="buttons">
-            <a href="#courses" class="btn primary">Know More</a>
-            <a href="#register" class="btn secondary">Register Today</a>
+            <a href="#about" class="btn primary">Know More</a>
+            <a href="login.html" class="btn secondary">Register Today</a>
           </div>
         </div>
       </section>
@@ -91,9 +91,11 @@
         </div>
       </section>
 
+      <hr class="section-divider" />
+
       <!-- Contact Section -->
       <section id="contact" class="contact">
-        <h2>Contact Us</h2>
+        <h2 class="con-h2">Contact Us</h2>
         <form>
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
@@ -125,7 +127,6 @@
     <!-- Back to Top -->
     <button id="backToTop" title="Go to top">↑</button>
 
-    <script src="js/script.js"></script>
     <script>
       fetch("navbar.html")
         .then((response) => response.text())
@@ -133,5 +134,6 @@
           document.getElementById("navbar-placeholder").innerHTML = data;
         });
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
