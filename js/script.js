@@ -16,24 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-let currentIndex = 0;
-
-function scrollTestimonials() {
+window.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("testimonialWrapper");
-  const totalCards = wrapper.children.length;
-  const cardWidth = wrapper.clientWidth;
+  const cards = Array.from(wrapper.children);
 
-  currentIndex++;
-
-  if (currentIndex >= totalCards) {
-    currentIndex = 0;
-  }
-
-  wrapper.scrollTo({
-    left: currentIndex * cardWidth,
-    behavior: "smooth",
+  cards.forEach((card) => {
+    const clone = card.cloneNode(true);
+    wrapper.appendChild(clone);
   });
-}
-
-// Auto-slide every 3 seconds
-setInterval(scrollTestimonials, 1200);
+});
