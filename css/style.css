@@ -177,7 +177,6 @@ section {
   color: #444;
 }
 
-/* ARROWS */
 .nav {
   position: absolute;
   top: 50%;
@@ -196,15 +195,23 @@ section {
   justify-content: center;
 }
 
-.nav.left {
-  left: 0;
+.testimonial-wrapper {
+  display: flex;
+  gap: 20px;
+  width: max-content; /* Important for smooth wrapping */
+  animation: scroll-left 40s linear infinite;
 }
 
-.nav.right {
-  right: 0;
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-/* Features */
+/* Contact Us */
 .contact form {
   display: flex;
   flex-direction: column;
