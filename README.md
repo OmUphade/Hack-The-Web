@@ -8,6 +8,9 @@ This is a responsive, static website created as part of the **"HACK THE WEB – 
 
 [https://hack-the-web.onrender.com](#)
 
+## Github Repo
+[https://github.com/OmUphade/Hack-The-Web.git](#)
+
 ## 📁 Project Structure
 
     # Hack-The-Web
