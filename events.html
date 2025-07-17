@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+     <header>
+      <div id="navbar-placeholder"></div>
+    </header>
+    <main id="mainContent">
+
+  <!-- Events Hero -->
+<section class="events-section">
+  <div class="events-header">
+    <h1>Events & Competitions</h1>
+    <p>Explore hackathons, coding contests, and exciting upcoming programs</p>
+  </div>
+
+  <!-- Upcoming Events Highlight -->
+  <!-- <div class="addbg highlight-event">
+    <div class="highlight-info">
+      <h2>🔥 Next Big Event: National Hackathon 2025</h2>
+      <p>Show your skills in a 24-hour coding marathon. Big prizes & recognition await you!</p>
+      <button class="highlight-btn">Register Now</button>
+    </div>
+    
+  </div> -->
+<div class="highlight-event">
+  <div class="overlay"></div>
+  <div class="highlight-info">
+    <h2>🔥 Next Big Event: National Hackathon 2025</h2>
+    <p>Show your skills in a 24-hour coding marathon. Big prizes & recognition await you!</p>
+    <button class="highlight-btn">Register Now</button>
+  </div>
+</div>
+
+
+  <!-- Filter Buttons -->
+  <div class="event-filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+    <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+    <button class="filter-btn" data-filter="finished">Finished</button>
+  </div>
+
+  <!-- Events Grid -->
+  <div class="events-grid">
+    <!-- Event Card -->
+    <div class="event-card" data-status="upcoming">
+      <div class="status-badge upcoming">UPCOMING</div>
+      <h3>Hackathon 2025</h3>
+      <p>Participate in an exciting 24-hour hackathon to test your coding skills.</p>
+      <span class="event-date">📅 25 July 2025 | ⏱ 10:00 AM</span>
+      <div class="event-buttons">
+        <button class="btn-primary">Register</button>
+        <button class="btn-secondary">Details</button>
+      </div>
+    </div>
+
+    <div class="event-card" data-status="ongoing">
+      <div class="status-badge ongoing">ONGOING</div>
+      <h3>Coding Contest</h3>
+      <p>A competitive programming event to challenge your problem-solving skills.</p>
+      <span class="event-date">📅 17 July 2025 | ⏱ 09:00 AM</span>
+      <div class="event-buttons">
+        <button class="btn-primary">Join Now</button>
+        <button class="btn-secondary">Details</button>
+      </div>
+    </div>
+
+    <div class="event-card" data-status="finished">
+      <div class="status-badge finished">FINISHED</div>
+      <h3>Annual Tech Fest</h3>
+      <p>A celebration of tech, creativity, and innovation – check highlights!</p>
+      <span class="event-date">📅 10 July 2025</span>
+      <div class="event-buttons">
+        <button class="btn-secondary">View Recap</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+     <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="js/events.js" defer></script>
+
+</body>
+</html>
