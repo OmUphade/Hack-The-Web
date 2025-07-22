@@ -11,32 +11,6 @@ This is a responsive, static website created as part of the **"HACK THE WEB – 
 ## Github Repo
 [https://github.com/OmUphade/Hack-The-Web.git](#)
 
-## 📁 Project Structure
-
-    # Hack-The-Web
-
-├── assets
-├── css
-│ ├── courses.css
-│ ├── event.css
-│ ├── global.css
-│ ├── login.css
-│ ├── people.css
-│ └── style.css
-├── js
-│ ├── courses.js
-│ ├── events.js
-│ ├── global-auth.js
-│ ├── login.js
-│ └── script.js
-├── course.html
-├── events.html
-├── index.html
-├── login.html
-├── navbar.html
-├── people.html
-└── README.md
-
 ---
 
 ## ✨ Features
@@ -57,24 +31,3 @@ This is a responsive, static website created as part of the **"HACK THE WEB – 
 - **CSS3**
 - **Vanilla JavaScript**
 - **Google Fonts & Icons**
-
----
-
-## 📽️ Demo Video
-
-video:
-
----
-
-## 📬 Contact
-
-For any queries or follow-up, reach out to:
-
-- **Team Members**: Om Uphade
-- **Email**: omuphade1@gmail.com
-
----
-
-## 📝 License
-
-This project was created specifically for the KK Computers Web Design Hackathon and is not intended for commercial use.
